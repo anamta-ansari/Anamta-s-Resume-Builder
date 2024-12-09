@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #1A237E;
+    color:#ffB300;
+}
+
+h1 , h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #ffB300;
+    color: #fff;
+    border: 2px solid #ffB300;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #283593;
+}
+
+.resume-output {
+    margin-top: 40px;
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+    background-color: #1A237E;
+
+}
+
+.resume-output h2 {
+    text-align: center;
+}
+
+.resume-output p{
+    color: white;
+}
+
+
+#resumeLeft h2 , h3{
+    color: #ffB300;
+}
+
+#resumeRight h3{
+    color: #ffB300;
+}
+#resumeRight{
+    background-color: #283593;
+    height: max-content;
+    color:white;
+}
+
+#resumeLeft{
+    background-color: #283593;
+    height: max-content;
+    color: white;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dynamic Resume Builder</h1>
+      <h2>By ANAMTA ANSARI</h2>
+
+      <form id="resumeForm">
+        <!-- Basic Details -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <label for="about">About:</label>
+        <textarea id="about" name="about" required></textarea>
+
+        <label for="skills">Skills (comma separated):</label>
+        <input type="text" id="skills" name="skills" required />
+
+        <label for="education">Education:</label>
+        <textarea id="education" name="education" required></textarea>
+
+        <label for="projects">Projects:</label>
+        <textarea id="projects" name="projects" required></textarea>
+
+        <label for="experience">Experience:</label>
+        <textarea id="experience" name="experience" required></textarea>
+
+        <button type="submit" onclick="displayResume()">Generate Resume</button>
+
+        <button id="downloadPdf" onclick = "downloadPDF()">Download Resume as PDF</button>
+        
+      </form>
+
+      <div id="resumeOutput" class="resume-output">
+        <div id="resumeLeft" class="resumeLeft"></div>
+        <div id="resumeRight" class="resumeRight"></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
